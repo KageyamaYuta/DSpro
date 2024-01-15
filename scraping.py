@@ -27,6 +27,6 @@ conn.commit()
 conn.close()
 
 # CSVファイルへの保存部分
-csv_path = '/Users/kageyamayuu/univ./課題/DSpro/'  # CSVファイルのパス
+csv_path = '/Users/kageyamayuu/univ./課題/DSpro/sleep_data.csv'  # CSVファイルのパス
 data_frame = pd.DataFrame({'睡眠指数': converted_data})
 data_frame.to_csv(csv_path, index=False)
