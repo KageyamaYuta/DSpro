@@ -17,7 +17,7 @@ def convert_text_to_value(text):
 converted_data = [convert_text_to_value(element.get_text(strip=True)) for element in data_elements]
 
 # データベース部分
-db_path = '/Users/kageyamayuu/univ./課題/DSpro/sleep_data.db'  # データベースファイルのパス
+db_path = '/Users/kageyamayuu/univ./課題/DSpro/sleep_data.sqlite'  # データベースファイルのパス
 conn = sqlite3.connect(db_path)
 conn.execute('CREATE TABLE IF NOT EXISTS sleep_index (id INTEGER PRIMARY KEY, index_value INTEGER);')
 cursor = conn.cursor()
